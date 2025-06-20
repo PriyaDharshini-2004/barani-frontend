@@ -15,16 +15,15 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import DatePicker from 'react-datepicker';
+
 import 'react-datepicker/dist/react-datepicker.css';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+
 import Checkbox from '@mui/material/Checkbox';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 
-const ip = '192.168.0.105'
 const Spectro = () => {
   const [heatNumber, setHeatNumber] = useState('');
   const [grade, setGrade] = useState('');

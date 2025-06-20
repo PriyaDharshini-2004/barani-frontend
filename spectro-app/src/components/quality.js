@@ -101,18 +101,18 @@ const QualityMaster = () => {
             const approvedBy = "Current User"; // Replace with actual user from your auth system
             
             // Send both status and approved_by to the backend
-            const response = await axios.put(
-                `http://${ip}:5002/quality/create/${id}/status`,
-                { 
-                    status: 'approved',
-                    approved_by: approvedBy
-                },
-                {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                }
-            );
+            // const response = await axios.put(
+            //     `http://${ip}:5002/quality/create/${id}/status`,
+            //     { 
+            //         status: 'approved',
+            //         approved_by: approvedBy
+            //     },
+            //     {
+            //         headers: {
+            //             'Content-Type': 'application/json'
+            //         }
+            //     }
+            // );
 
             // Optimistically update the UI without refetching
             setData(data.map(item => 

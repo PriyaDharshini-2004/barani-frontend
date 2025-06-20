@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.6b62d9c6.css",
-    "main.js": "/static/js/main.08391448.js",
+    "main.js": "/static/js/main.2cde2c2b.js",
     "static/js/453.54cf9954.chunk.js": "/static/js/453.54cf9954.chunk.js",
     "static/media/Barani logo.jpg": "/static/media/Barani logo.2b299626f30894482f53.jpg",
     "index.html": "/index.html",
     "main.6b62d9c6.css.map": "/static/css/main.6b62d9c6.css.map",
-    "main.08391448.js.map": "/static/js/main.08391448.js.map",
+    "main.2cde2c2b.js.map": "/static/js/main.2cde2c2b.js.map",
     "453.54cf9954.chunk.js.map": "/static/js/453.54cf9954.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b62d9c6.css",
-    "static/js/main.08391448.js"
+    "static/js/main.2cde2c2b.js"
   ]
 }

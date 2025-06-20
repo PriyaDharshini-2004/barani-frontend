@@ -6,7 +6,7 @@ import axios from 'axios';
 import './createnew.css';
 import { InputText } from "primereact/inputtext";
 import { FloatLabel } from 'primereact/floatlabel';
-import Sidebar from './Sidebar';
+
 
 const ip = '192.168.0.105'
 
@@ -144,7 +144,7 @@ const CreateNew = () => {
   }, [location.state]);
 
   const handleInputChange = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     const [element, field] = name.split('.');
     
     if (field) {

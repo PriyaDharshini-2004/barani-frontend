@@ -19,7 +19,10 @@ const Dashboard = () => {
             S: '',
             Cr: '',
             Zn: '',
-            Ni: ''
+            Ni: '',
+            Cu: '',
+            Mg: '',
+            Sn: ''
         },
         pickup: {
             carbon: {
@@ -56,7 +59,10 @@ const Dashboard = () => {
             S: '',
             Cr: '',
             Zn: '',
-            Ni: ''
+            Ni: '',
+            Cu: '',
+            Mg: '',
+            Sn: ''
         },
         pickup: {
             carbon: {
@@ -93,7 +99,10 @@ const Dashboard = () => {
             S: '',
             Cr: '',
             Zn: '',
-            Ni: ''
+            Ni: '',
+            Cu: '',
+            Mg: '',
+            Sn: ''
         },
         pickup: {
             carbon: {
@@ -194,7 +203,10 @@ const Dashboard = () => {
                     S: '',
                     Cr: '',
                     Zn: '',
-                    Ni: ''
+                    Ni: '',
+                    Cu: '',
+                    Mg: '',
+                    Sn: ''
                 },
                 pickup: {
                     carbon: {
@@ -312,6 +324,9 @@ const Dashboard = () => {
                                     <th>Cr</th>
                                     <th>Zn</th>
                                     <th>Ni</th>
+                                    <th>Cu</th>
+                                    <th>Mg</th>
+                                    <th>Sn</th>
                                     <th>Spectro Result</th>
                                     <th>Remarks</th>
                                 </tr>
@@ -460,6 +475,33 @@ const Dashboard = () => {
                                         />
                                     </td>
                                     <td>
+                                        <input
+                                            type="number"
+                                            step="0.0001"
+                                            name="Cu"
+                                            value={formData.composition.Cu}
+                                            onChange={handleCompositionChange(formNumber)}
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="number"
+                                            step="0.0001"
+                                            name="Mg"
+                                            value={formData.composition.Mg}
+                                            onChange={handleCompositionChange(formNumber)}
+                                        />
+                                    </td>
+                                    <td>
+                                        <input
+                                            type="number"
+                                            step="0.0001"
+                                            name="Sn"
+                                            value={formData.composition.Sn}
+                                            onChange={handleCompositionChange(formNumber)}
+                                        />
+                                    </td>
+                                    <td>
                                         <select
                                             name="spectroResult"
                                             value={formData.spectroResult}
@@ -505,9 +547,9 @@ const Dashboard = () => {
     return (
         <div className="dashboard-container">
             <div className="dashboard-cards-container">
-                {renderDashboardCard(1, 'Dashboard Entry 1')}
-                {renderDashboardCard(2, 'Dashboard Entry 2')}
-                {renderDashboardCard(3, 'Dashboard Entry 3')}
+                {renderDashboardCard(1, 'Furnace 1')}
+                {renderDashboardCard(2, 'Furnace 2')}
+                {renderDashboardCard(3, 'Furnace 3')}
             </div>
 
             {/* Display saved data */}

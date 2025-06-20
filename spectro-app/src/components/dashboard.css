@@ -1,0 +1,226 @@
+.dashboard-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  flex: 1;
+}
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-left: 0px;
+  flex:1;
+}
+
+.dashboard-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between cards */
+}
+
+.dashboard-card {
+  width: 80%;
+  margin-bottom: 24px;
+  /* Other existing card styles */
+}
+
+/* Keep your existing table styles, but ensure they're responsive */
+.table-container {
+  overflow-x: auto;
+}
+.dashboard-cards-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    min-width: 350px;
+    /* flex: 1; */
+    flex: 1;
+  padding: 24px;
+  margin-left: 250px;
+
+}
+
+.dashboard-header {
+    margin-bottom: 20px;
+}
+
+.dashboard-title {
+    color: #333;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 500;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+}
+
+.dashboard-table td input,
+.dashboard-table td select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pickup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pickup-inputs input {
+    margin-bottom: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.saved-data {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.saved-data h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.spectro-result-ok {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.spectro-result-not-ok {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.spectro-result-rejected {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.remarks-cell {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1200px) {
+    .dashboard-cards-container {
+        flex-direction: column;
+    }
+    
+    .dashboard-card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-group {
+        min-width: 100%;
+    }
+    
+    .dashboard-table {
+        font-size: 14px;
+    }
+    
+    .dashboard-table th,
+    .dashboard-table td {
+        padding: 6px;
+    }
+}

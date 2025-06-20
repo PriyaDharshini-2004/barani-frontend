@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main container with sidebar margin */
+.create-container {
+    min-height: 100vh;
+    padding: 24px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: calc(100% - 250px);
+}
+
+/* Card style for the basic info form */
+.basic-info-card {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    margin: 0 0 24px 0;
+    width: 100%;
+    border-radius: 8px !important;
+    padding: 24px;
+}
+
+/* Card style for the composition sections */
+.composition-card {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    margin: 0;
+    width: 100%;
+    border-radius: 8px !important;
+    padding: 24px;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2196f3;
+}
+
+/* Input section styling */
+.create-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+.create-input-word-container {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: #78787a;
+    text-align: initial;
+}
+
+.create-customer {
+    height: 48px;
+    width: 250px;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #bcd4d6;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+
+.create-customer:focus {
+    border: 1.5px solid #2196f3;
+    outline: none;
+}
+
+.label-float {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Chemical section styling */
+.create-chemical-container {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+/* Section heading and plus/minus buttons */
+.enter-heading {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.percentage-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.percentage-input {
+  flex: 1;
+  min-width: 0;
+}
+.percentage-symbol {
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Date input specific styling */
+.input-chemical[type="date"] {
+  padding: 7px 8px; /* Slightly different padding for date inputs */
+  font-family: inherit;
+}
+
+.inside-create-chemicals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.plus-button, .minus-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+  padding: 5px;
+}
+
+.plus-button:hover, .minus-button:hover {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+/* Chemical fields grid */
+.inside-chemicals-buttons {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.inside-chemicals-buttons {
+  width: 100%;
+}
+
+.c-chemical {
+  flex: 1;
+}
+.c-chemical p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+.input-chemical {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-chemical:focus {
+    border: 1.5px solid #2196f3;
+    outline: none;
+}
+
+.c-inside {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.c-inside p {
+    font-weight: 500;
+}
+
+/* Min/max input styling */
+.minimum-input, .maxmium-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+}
+
+.min-max {
+    display: flex;
+    margin-left: 1rem;
+    padding-left: 20px;
+    gap: 19px;
+}
+
+.min-max-para {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px;
+}
+
+/* Button container at the bottom */
+.create-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.create-submit-button, .create-reset-button {
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+.create-submit-button:hover, .create-reset-button:hover {
+    background-color: #1565c0;
+}
+
+.create-button-chemical {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.create-button-chemical:hover {
+    background-color: #2196f3;
+    color: #fff;
+}
+.back-button-chart {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.back-button-chart:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}
+
+.back-button-chart:active {
+  background-color: #d0d0d0;
+  transform: translateY(1px);
+}
+
+.back-button-chart:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+.rm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rm-table th, .rm-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.rm-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.rm-dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* New styles for input fields */
+.input-chemical {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.weight-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between input and kg */
+}
+
+.weight-input {
+    flex: 1; /* Takes remaining space */
+    min-width: 0; /* Prevents overflow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .create-container {
+        margin-left: 0;
+        padding: 16px;
+        width: 100%;
+    }
+    .basic-info-card,
+    .composition-card {
+        padding: 16px;
+    }
+    .create-input-container {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .create-container {
+        margin-left: 0;
+        padding: 8px;
+        width: 100%;
+    }
+    .basic-info-card,
+    .composition-card {
+        padding: 12px;
+    }
+    .create-input-container,
+    .inside-chemicals-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .c-inside {
+        min-width: 100%;
+    }
+    .create-button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Pickup Composition Tables */
+.pickup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.pickup-table th, 
+.pickup-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.pickup-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.pickup-subheading {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Adjust input fields in tables */
+.pickup-table .input-chemical {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.pickup-table .percentage-input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pickup-table .percentage-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.pickup-table .percentage-symbol {
+  color: #555;
+  white-space: nowrap;
+}
+
+.min-max-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.min-max-container input {
+  width: 80px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.min-max-container input::placeholder {
+  color: #999;
+  font-size: 12px;
+}
